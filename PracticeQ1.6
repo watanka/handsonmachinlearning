@@ -1,0 +1,75 @@
+1.6 Practice Q
+
+1. How would you define Machine Learning?
+- When given task P, if performance indicator of the task, I increases with learning data D, then we could say task P machine-learned data D in respect of I.
+  By using machine learning, we can account for interactions/ contributions of many variables on our target variable, which in otherwise would not have been captured.
+
+2. Can you name four types of problems where it shines?
+- to classify images of numbers (MNIST) 
+- to draw associations to predict value (Association Rule, e.g. 'Amazon recommended for you item list'
+- to handle big data to sort out meaningful variables (PCA)
+- to reinforce AI to play smarter (reinforcement learning)
+
+3. What is a labeled training set?
+- When training set is assigned to be classified in certain group, it is called labeled training set in supervised learning.
+Instead of computer finding out pattern to classify, labeled training set provide labels to guide computer how to learn.
+
+4. What are the two most common supervised tasks?
+- K-Nearest Neighbors
+- Neural Network
+
+5. Can you name four common unsuperivsed tasks?
+- Association Rule Learning
+- Clustering
+- Visulization
+- Dimensionality Reduction
+
+6. What type of Machine Learning algorithm would you use to allow a robot to walk in various unknown terrains?
+- Reinforcement Learning
+
+7. What type of algorithm would you use to segment your customers into multiple groups?
+- Using K-Nearest Neighbor, we can classify each customers with different range of expenditures by various characteristics.
+
+8. Would you frame the problem of spam detection as a supervised learning problem or an unsupervised learning problem?
+- I would frame the problem of spam detection as a supervised learning problem, since human can easily recognize which one is a spam, and provide labels to data set.
+
+9. What is an online learning system?
+- After building a valid model with training data and test data, online learning system keeps feeding new data for model to adjust its parameters.
+
+10. What is out-of-core learning?
+- Out-of-core learning refers to a set of algorithms working with data that cannot fit into the memory of a single computer, but that can easily fit into some data storage such as a local hard disk or web repository
+  It chops data into mini-batches and do online learning.
+
+11. What type of learning algorithm relies on a similarity measure to make predictions?
+- Linear regression, it assumes that the gap between actual value and prediction is negligible.
+
+12. What is the difference between a model parameter and a learning algorithm's hyperparameter?
+- A model has one or more model parameters that determine what it will predict given a new instance(e.g., the slope of a linear model). A learning algorthm tries to find optimal values for these parameters such that the model generalizes well to new instances. A hyperparameter is a parameter of the learning algorithm itself, not of the model (e.g., the amount of regularization to apply.)
+
+13. What do model-based learning algorithms search for? What is the most common strategy they use to succeed? How do they make predictions?
+- Model-based learning algorithms search for optimized model parameter such that model iwll generalize well to new instances. Usually we set cost function that measures how bad the system is at making predictions on the training data, plus a penalty for model complexity if the model is regularized. After constructing model, we feed instance's features into the model to predict.
+
+14. Can you name four of the main challenges in Machine Learning?
+- Lack of Data
+- poor data quality
+- nonrepresentative data
+- uninformative features (overfitting)
+- too simple features (underfitting)
+
+15. If your model performs great on the training data but generalizes poorly to new instances, what is happening? Can you name three possible solutions?
+- When model performs great on the training but generalizes poorly to new instances, that means the model has been overfitted to the training data.
+  In that case, we can regularize the model such as decreasing learning rate to adjust more leniently, add more data, or reduce the noise in the training data.
+ 
+16. What is a test set and why would you want to use it?
+- Test set is to test generalizability of your trained model.
+
+17. What is the purpose of a validation set?
+- It is to compare models, right after training is done. It can tune the hyperparameters and select the best model.
+
+18. What can go wrong if you tune hyperparameters using the test set?
+- It may overfit to the training set (which is test set in this case), and also blur the validation of generalization error.
+
+19. What is cross-validation and why would you prefer it to a validation set?
+- In order to efficiently use the data, and not waste any of it, we use validation set. Validation makes it possible to compare models without the need for a separate validation set.
+
+
